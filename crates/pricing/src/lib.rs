@@ -32,3 +32,16 @@ mod tests {
         assert_eq!(discounted(1_000, 150), 0);
     }
 }
+
+/// The reduced VAT rate for books and food: half the standard rate.
+pub fn reduced_rate() -> u32 {
+    rate() / 2
+}
+
+#[cfg(test)]
+mod reduced_tests {
+    #[test]
+    fn reduced_is_half() {
+        assert_eq!(super::reduced_rate(), 10);
+    }
+}
