@@ -17,7 +17,6 @@ pub fn products() -> Vec<Product> {
         Product { sku: "MUG-01", name: "Sheltie mug", price: 1_200 },
         Product { sku: "TEE-01", name: "Merge queue T-shirt", price: 2_500 },
         Product { sku: "STK-01", name: "Sticker pack", price: 400 },
-        Product { sku: "HOD-01", name: "Shepherd hoodie", price: 4_900 },
     ]
 }
 
