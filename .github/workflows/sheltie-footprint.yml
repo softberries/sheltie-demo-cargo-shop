@@ -13,6 +13,3 @@ jobs:
       plain: |
         config/**
         migrations/**
-    secrets:
-      # Only while softberries/sheltie is private.
-      sheltie-repo-token: ${{ secrets.SHELTIE_REPO_TOKEN }}

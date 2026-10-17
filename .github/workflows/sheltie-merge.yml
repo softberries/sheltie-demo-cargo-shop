@@ -13,6 +13,3 @@ jobs:
       pr: ${{ github.event.client_payload.pr }}
       head: ${{ github.event.client_payload.head }}
       onto: ${{ github.event.client_payload.onto }}
-    secrets:
-      # Only while softberries/sheltie is private.
-      sheltie-repo-token: ${{ secrets.SHELTIE_REPO_TOKEN }}

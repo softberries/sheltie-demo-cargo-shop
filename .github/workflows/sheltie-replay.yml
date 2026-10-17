@@ -16,5 +16,3 @@ jobs:
       mode: ${{ github.event.client_payload.mode }}
     secrets:
       anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
-      # Only while softberries/sheltie is private.
-      sheltie-repo-token: ${{ secrets.SHELTIE_REPO_TOKEN }}
