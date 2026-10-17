@@ -18,3 +18,8 @@ mod tests {
         assert!(search("nothing").is_empty());
     }
 }
+
+/// Products whose SKU starts with `prefix`.
+pub fn by_sku_prefix(prefix: &str) -> Vec<Product> {
+    products().into_iter().filter(|p| p.sku.starts_with(prefix)).collect()
+}
