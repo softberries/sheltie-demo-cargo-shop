@@ -45,3 +45,16 @@ mod reduced_tests {
         assert_eq!(super::reduced_rate(), 10);
     }
 }
+
+/// The premium VAT rate for luxury goods: the standard rate plus 5 points.
+pub fn premium_rate() -> u32 {
+    standard_rate() + 5
+}
+
+#[cfg(test)]
+mod premium_tests {
+    #[test]
+    fn premium_is_25() {
+        assert_eq!(super::premium_rate(), 25);
+    }
+}
