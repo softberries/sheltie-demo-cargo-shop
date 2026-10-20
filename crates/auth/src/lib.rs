@@ -15,8 +15,3 @@ mod tests {
         assert!(!valid_token("short"));
     }
 }
-
-/// Whether a session created at `created` (seconds) has expired at `now`, after 30 days.
-pub fn expired(created: u64, now: u64) -> bool {
-    now.saturating_sub(created) > 30 * 24 * 3600
-}
