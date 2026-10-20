@@ -8,7 +8,7 @@ pub fn render(customer: &str, cart: &Cart) -> String {
     format!(
         "Invoice for {customer}\nNet: {}\nVAT ({}%): {}\nTotal: {}\n",
         cents(net),
-        shop_pricing::standard_rate(),
+        shop_pricing::vat_rate(),
         cents(shop_pricing::tax(net)),
         cents(cart.gross())
     )
